@@ -1,7 +1,7 @@
 public class Amount{
 
  private int cents;
-
+//@ invariant Math.abs(cents) < 100;
  private int dollars;
 
  public Amount(int dollars, int cents){
