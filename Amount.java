@@ -10,7 +10,7 @@ public class Amount{
  }
 //@ ensures \result != null;
  public Amount negate(){
-   return new Amount(-cents, -dollars);
+   return new Amount(-this.dollars, -this.cents);
  }
  //@ requires a != null;
  public Amount subtract(Amount a){
