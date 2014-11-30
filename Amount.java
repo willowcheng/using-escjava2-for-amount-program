@@ -8,7 +8,7 @@ public class Amount{
    this.dollars = dollars;
    this.cents = cents;
  }
-
+//@ ensures \result != null;
  public Amount negate(){
    return new Amount(-cents, -dollars);
  }
