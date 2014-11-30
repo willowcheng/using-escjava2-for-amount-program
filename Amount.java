@@ -12,7 +12,7 @@ public class Amount{
  public Amount negate(){
    return new Amount(-cents, -dollars);
  }
-
+ //@ requires a != null;
  public Amount subtract(Amount a){
    return this.add(a.negate());
  }
