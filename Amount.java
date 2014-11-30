@@ -25,17 +25,17 @@ public class Amount{
       new_dollars = new_dollars - 1;
       return new Amount(new_dollars,new_cents);
    }
-   if (new_cents > 100) {
+   else if (new_cents > 100) {
       new_cents = new_cents - 100;
       new_dollars = new_dollars - 1;
       return new Amount(new_dollars,new_cents);
    }
-   if (new_cents < 0 && new_dollars > 0) {
+   else if (new_cents < 0 && new_dollars > 0) {
        new_cents = new_cents + 100;
        new_dollars = new_dollars - 1;
        return new Amount(new_dollars,new_cents);
    }
-   if (new_cents >= 0 && new_dollars <= 0) {
+   else if (new_cents > 0 && new_dollars < 0) {
        new_cents = new_cents - 100;
        new_dollars = new_dollars + 1;
        return new Amount(new_dollars,new_cents);
