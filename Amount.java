@@ -16,7 +16,7 @@ public class Amount{
  public Amount subtract(Amount a){
    return this.add(a.negate());
  }
-
+//@ requires a != null;
  public Amount add(Amount a){
    int new_dollars = dollars + a.dollars;
    int new_cents = cents + a.cents;
