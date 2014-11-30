@@ -3,7 +3,7 @@ public class Amount{
  private int cents;
 //@ invariant Math.abs(cents) < 100;
  private int dollars;
-
+//@ requires Math.abs(cents) < 100;
  public Amount(int dollars, int cents){
    this.dollars = dollars;
    this.cents = cents;
