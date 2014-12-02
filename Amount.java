@@ -1,21 +1,21 @@
 public class Amount{
 
  private int cents;
- //@ invariant cents < 100 && cents > -100;
+//@ invariant cents < 100 && cents > -100;
 
  private int dollars;
- //@ invariant dollars > 0 ==> cents >= 0;
- //@ invariant dollars < 0 ==> cents <= 0;
+//@ invariant dollars > 0 ==> cents >= 0;
+//@ invariant dollars < 0 ==> cents <= 0;
 
- //@ requires cents < 100 && cents > -100;
- //@ requires dollars > 0 ==> cents >= 0;
- //@ requires dollars < 0 ==> cents <= 0;
+//@ requires cents < 100 && cents > -100;
+//@ requires dollars > 0 ==> cents >= 0;
+//@ requires dollars < 0 ==> cents <= 0;
  public Amount(int dollars, int cents){
    this.dollars = dollars;
    this.cents = cents;
  }
 
- //@ ensures \result != null;
+//@ ensures \result != null;
  public Amount negate(){
    return new Amount(-this.dollars, -this.cents);
  }
@@ -25,7 +25,7 @@ public class Amount{
    return this.add(a.negate());
  }
 
- //@ requires a != null;
+//@ requires a != null;
  public Amount add(Amount a){
    int new_dollars = dollars + a.dollars;
    int new_cents = cents + a.cents;

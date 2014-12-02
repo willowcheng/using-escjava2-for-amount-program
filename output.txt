@@ -1,0 +1,24 @@
+
+C:\ESCJava2>"java"  -Dsimplify=C:\ESCJava2\Simplify-1.5.4.exe -classpath "C:\ESCJava2\esctools2.jar;C:\ESCJava2\Utils\BCEL\bcel-5.2\bcel-5.2.jar;C:\ESCJava2\Utils\Javafe\Javafe2.0.5b.jar" escjava.Main -classpath   C:\ESCJava2\jmlspecs.jar -classpath . -nowarn Deadlock -specs C:\ESCJava2\specs Amount.java 
+ESC/Java version ESCJava-2.0.5
+    [0.033 s 31328408 bytes]
+
+Amount ...
+  Prover started:0.144 s 39370648 bytes
+    [0.966 s 39370648 bytes]
+
+Amount: Amount(int, int) ...
+    [0.055 s 40650728 bytes]  passed
+
+Amount: negate() ...
+    [0.028 s 41285152 bytes]  passed
+
+Amount: subtract(Amount) ...
+    [0.02 s 41919592 bytes]  passed
+
+Amount: add(Amount) ...
+    [0.085 s 43823480 bytes]  passed
+
+Amount: equal(Amount) ...
+    [0.019 s 44457976 bytes]  passed
+  [1.176 s 44457976 bytes total]
